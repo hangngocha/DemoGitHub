@@ -1,0 +1,46 @@
+header{
+    background-color:#036aa6;
+}
+.navbar{
+    background-color: #007cc3 !important;
+}
+/* @media screen and (min-width:1220px) and (max-width:1400px){
+
+} */
+.intro__left{
+    height:300px;
+    background:url('../img/intro-3.jpg') no-repeat center center;
+    background-size:cover;
+    background-clip: content-box;
+}
+.intro__right{
+    height:300px;
+    background:url('../img/intro-4.jpg') no-repeat center center;
+    background-size:cover;
+    background-clip: content-box;
+}
+.card-title{
+    font-size:24px;
+}
+
+@media screen and (max-width:1200px){
+    header span, header i{
+        font-size:22px;
+   }
+}
+@media screen and (max-width:992px){
+    header span, header i{
+        font-size:20px;
+   }
+   .nav-item{
+       border:none !important ;
+   }
+}
+@media screen and (max-width:768px){
+    header span, header i{
+        font-size:15px;
+   }
+}
+@media screen and (max-width:576px){
+  
+}

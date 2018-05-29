@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <script src="js/fontawesome-all.js"></script>
+
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<style type="text/css">
+  .line{
+    background: red;
+    height:3px;
+    width:0%;
+    transition: all 0.5s;
+  }
+  .nav-item:hover >.line{
+    width:100%;
+  }
+  .navbar{
+    background-color:#007cc3;
+    padding:0;
+  }
+  .dropdown-menu::before{
+    content:'';
+    border-bottom:15px solid white;
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+    position:absolute;
+    top:-15px;
+    left:35%;
+  }
+  #header{
+    background-color:#036aa6;
+  }
+  #carousel{
+    background-image: url('img/banner-3.jpg');
+    height:500px;
+    background-size:cover;
+  }
+  .intro-left{
+    background:url('img/intro-3.jpg');
+    background-size:cover;
+    height:300px;
+    background-position: center center;
+
+  }
+  .intro-right{
+    background:url('img/intro-4.jpg');
+    background-size:cover;
+    height:300px;
+   
+  }
+  .card-body h2{
+    font-size:20px;
+  }
+  .form-detail h1{
+    font-size:30px;
+  }
+  .form-detail p{
+    font-size:18px;
+  }
+  .media img{
+    width:60px;
+  }
+</style>
+<body>
+  <header id="header" class="py-2">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5 text-white">
+          <span>01634643124</span>
+          <i class="fas fa-mobile-alt"></i>
+          <span>dangtrunghieu147@gmail.com</span>
+        </div>
+        <div class="col-md-7 text-right">
+          <i class="fab fa-facebook-square text-white"></i>
+          <i class="fab fa-twitter-square text-danger"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand p-0">
+          <img src="img/logo.png" alt="" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item px-3 py-2">
+              <a href="#" class="nav-link text-white font-weight-bold">Vehicles</a>
+            </li>
+            <li class="nav-item px-3 border-left py-2">
+              <a href="#" class="nav-link text-white font-weight-bold">Shopping Tools</a>
+            </li>
+            <li class="nav-item px-3 border-left py-2 dropdown">
+              <a href="#" class="nav-link text-white font-weight-bold" data-toggle="dropdown">Owners <i class="fas fa-angle-down"></i></a>
+              <div class="dropdown-menu animated fadeInUp">
+                <a href="#" class="dropdown-item">Honda Safting</a>
+                <a href="#" class="dropdown-item">Honda Sensing</a>
+                <a href="#" class="dropdown-item">Honda Serial</a>
+              </div>
+            </li>
+            <li class="nav-item px-3 border-left py-2">
+              <a href="#" class="nav-link text-white">Discover</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   <section id="carousel" class="animated bounceInDown">
+     
+   </section>
+   <div class="container">
+     <div class="row">
+       <div class="col-12">
+         <ol class="breadcrumb bg-white">
+           <li class="breadcrumb-item">Home</li>
+           <li class="breadcrumb-item">Products</li>
+           <li class="breadcrumb-item active">Home</li>
+         </ol>
+       </div>
+     </div>
+   </div>
+   <section id="intro" class="mt-5">
+      <h1 class="display-2 text-center text-dark mb-3">Intro</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="intro-left d-flex align-items-end justify-content-center pb-5">
+              <h2 class="text-primary lead font-italic text-lowercase">Xe này là một cái xe gì đó mình không biết tên</h2>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="intro-right d-flex align-items-end justify-content-center pb-5">
+              <h2 class="text-success lead text-uppercase">Xe này là một cái xe gì đó mình không biết tên</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+   </section>
+   <section id="product" class="mt-5">
+      <h1 class="display-2 text-center text-secondary mb-3">Product</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4 mb-3">
+            <div class="card product-item border-success">
+              <img src="img/xe-3-hover.png" class="img-fluid">
+              <div class="card-body text-center">
+                <h2 class="card-title text-success">
+                    Cars Sedans
+                    <span class="badge badge-success badge-pill">12</span>
+                </h2>
+                <div class="d-flex justify-content-around">
+                  <div class="product-left">
+                    <p>$410,000</p>
+                    <p>Starting</p>
+                  </div>
+                  <div>
+                    <p>$410,000</p>
+                    <p>Starting</p>
+                  </div>
+                </div>
+                <button class="btn btn-success">Explore</button>
+                <button class="btn btn-outline-success">Build</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-3">
+            <div class="card product-item border-primary">
+              <img src="img/xe-2-hover.png" class="img-fluid">
+              <div class="card-body text-center">
+                <h2 class="card-title text-primary">Cars Sedans <span class="badge badge-primary">12</span></h2>
+                <div class="d-flex justify-content-around">
+                  <div class="product-left">
+                    <p>$410,000</p>
+                    <p>Starting</p>
+                  </div>
+                  <div>
+                    <p>$410,000</p>
+                    <p>Starting</p>
+                  </div>
+                </div>
+                <button class="btn btn-primary">Explore</button>
+                <button class="btn btn-outline-primary">Build</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-3 animated fadeInDown">
+            <div class="card product-item border-secondary">
+              <img src="img/xe-1-hover.png" class="img-fluid">
+              <div class="card-body text-center">
+                <h2 class="card-title text-secondary">Cars Sedans <span class="badge badge-secondary">12</span></h2>
+                <div class="d-flex justify-content-around">
+                  <div class="product-left">
+                    <p>$410,000</p>
+                    <p>Starting</p>
+                  </div>
+                  <div>
+                    <p>$410,000</p>
+                    <p>Starting</p>
+                  </div>
+                </div>
+                <button class="btn btn-secondary">Explore</button>
+                <button class="btn btn-outline-secondary">Build</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-3 animated fadeInDown wow">
+            <div class="card product-item border-danger">
+              <img src="img/xe-2.png" class="img-fluid">
+              <div class="card-body text-center">
+                <h2 class="card-title text-danger">Cars Sedans <span class="badge badge-danger">12</span></h2>
+                <div class="d-flex justify-content-around">
+                  <div class="product-left">
+                    <p>$410,000</p>
+                    <p>Starting</p>
+                  </div>
+                  <div>
+                    <p>$410,000</p>
+                    <p>Starting</p>
+                  </div>
+                </div>
+                <button class="btn btn-danger">Explore</button>
+                <button class="btn btn-outline-danger">Build</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-3">
+            <div class="card product-item border-info">
+              <img src="img/xe-3.png" class="img-fluid">
+              <div class="card-body text-center">
+                <h2 class="card-title text-info">Cars Sedans <span class="badge badge-info">12</span></h2>
+                <div class="d-flex justify-content-around">
+                  <div class="product-left">
+                    <p>$410,000</p>
+                    <p>Starting</p>
+                  </div>
+                  <div>
+                    <p>$410,000</p>
+                    <p>Starting</p>
+                  </div>
+                </div>
+                <button class="btn btn-info">Explore</button>
+                <button class="btn btn-outline-info">Build</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-3">
+            <div class="card product-item border-warning">
+              <img src="img/xe-4.png" class="img-fluid">
+              <div class="card-body text-center">
+                <h2 class="card-title text-warning">Cars Sedans <span class="badge badge-warning">12</span></h2>
+                <div class="d-flex justify-content-around">
+                  <div class="product-left">
+                    <p>$410,000</p>
+                    <p>Starting</p>
+                  </div>
+                  <div>
+                    <p>$410,000</p>
+                    <p>Starting</p>
+                  </div>
+                </div>
+                <button class="btn btn-warning">Explore</button>
+                <button class="btn btn-outline-warning">Build</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 d-flex justify-content-between">
+            <div class="btn-group">
+              <button class="btn btn-success">Next</button>
+              <button class="btn btn-success">Previous</button>
+            </div>
+            <nav>
+              <ul class="pagination m-0">
+                <li class="page-item disabled">
+                  <a href="#" class="page-link">Pre</a>
+                </li>
+                <li class="page-item active">
+                  <a href="#" class="page-link">1</a>
+                </li>
+                <li class="page-item">
+                  <a href="#" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                  <a href="#" class="page-link">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+   </section>
+   <section id="form" class="mt-5">
+     <div class="container">
+       <div class="row">
+         <div class="col-lg-4">
+           <div class="form-detail bg-success py-3 pl-3 rounded lead text-white">
+             <h1 class="display-4 mb-4">Thông tin liên lạc</h1>
+             <p >Địa chỉ : 296 Võ Thành Trang,Tân Bình</p>
+             <p>SĐT: 01634643124</p>
+             <p>Email: dangtrunghieu147@gmail.com</p>
+           </div>
+         </div>
+         <div class="col-lg-8">
+           <div class="card form-detail form-contact bg-info">
+              <div class="card-header">
+                <h1 class="display-4 text-center">Form liên hệ</h1>
+              </div>
+              <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="name">Name :</label>
+                  <input type="text" class="form-control" name="" placeholder="Name..">
+                </div>
+                <div class="form-group">
+                  <label for="name">Email :</label>
+                  <input type="email" class="form-control" name="" placeholder="Email..">
+                  <div class="alert alert-danger mt-1">Sai Thông tin</div>
+                </div>
+                <div class="form-group">
+                  <label for="name">Phone Number :</label>
+                  <input type="number" class="form-control" name="" placeholder="Phone Number..">
+                </div>
+                <div class="form-group d-flex">
+                  <label for="name">You Are :</label>
+                  <div class="form-check mx-2">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="job">
+                      Tiến sĩ
+                    </label>
+                  </div>
+                  <div class="form-check mx-2">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="job">
+                      Cử nhân
+                    </label>
+                  </div>
+                  <div class="form-check mx-2">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="job">
+                      Thạc Sĩ
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="name">Mail content :</label>
+                  <textarea name="" id="" class="form-control" rows="4"></textarea>
+                </div>
+                <div class="text-center">
+                  <button class="btn btn-light text-dark ">Submit</button>
+                </div>
+              </form>
+              </div>
+              <div class="card-footer">
+                  <p class="m-0 text-white text-center text-white font-italic ">Thank you for your contact!</p>
+              </div>
+          </div>
+         </div>
+       </div>
+     </div>
+   </section>
+   <section id="comment">
+     <div class="container">
+       <div class="row">
+         <div class="col-12">
+           <h1 class="display-3">Bình luận</h1>
+           <div class="media mt-3 bg-secondary p-3 text-white">
+             <img src="img/person1.jpg" class="img-fluid mr-3 rounded">
+             <div class="media-body">
+               <h5>Trung hiếu</h5>
+               <p>Cơn mưa ngang qua mang em đi xa, em đi luôn đi đừng về..Cơn mưa ngang qua mang em đi xa, em đi luôn đi đừng về..</p>
+               <div class="media mt-3">
+                 <img src="img/person1.jpg" class="img-fluid mr-3 rounded">
+                 <div class="media-body">
+                   <h5>Trung hiếu</h5>
+                   <p>Cơn mưa ngang qua mang em đi xa, em đi luôn đi đừng về..Cơn mưa ngang qua mang em đi xa, em đi luôn đi đừng về..</p>
+                 </div>
+                </div>
+             </div>
+           </div>
+           <div class="media mt-3 text-white bg-primary p-3">
+            <div class="media-body text-right">
+               <h5>Trung hiếu</h5>
+               <p>Cơn mưa ngang qua mang em đi xa, em đi luôn đi đừng về..Cơn mưa ngang qua mang em đi xa, em đi luôn đi đừng về..</p>
+             </div>
+             <img src="img/person1.jpg" class="img-fluid ml-3 rounded">
+           </div>
+          <div class="media mt-3 text-white bg-danger p-3">
+             <img src="img/person1.jpg" class="img-fluid mr-3 rounded">
+             <div class="media-body">
+               <h5>Trung hiếu</h5>
+               <p>Cơn mưa ngang qua mang em đi xa, em đi luôn đi đừng về..Cơn mưa ngang qua mang em đi xa, em đi luôn đi đừng về..</p>
+             </div>
+           </div>
+          <div class="media mt-3 text-white bg-warning p-3">
+             <div class="media-body text-right">
+               <h5>Trung hiếu</h5>
+               <p>Cơn mưa ngang qua mang em đi xa, em đi luôn đi đừng về..Cơn mưa ngang qua mang em đi xa, em đi luôn đi đừng về..</p>
+             </div>
+             <img src="img/person1.jpg" class="img-fluid ml-3 rounded">
+           </div>
+
+
+         </div>
+       </div>
+     </div>
+   </section>
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+</body>
+
+</html>
